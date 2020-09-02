@@ -71,12 +71,19 @@ if (!isset($_SESSION['admin_name'])) {
 		} else if (empty($d_time)) {
 			$d_time_empty = "<div class='error msg'>Departure Time Empty</div>";
 		} else if (empty($a_time)) {
+
+			                
 			$a_time_empty = "<div class='error msg'>Arrival Time Empty</div>";
 		} else if (empty($seats)) {
+
+
 			$seats_empty = "<div class='error msg'>Type No of Seats</div>";
 		} else if (empty($price)) {
 			$price_empty = "<div class='error msg'>Enter Ticket Price</div>";
 		} else {
+			
+		$d_time = date("g:i a", strtotime($_POST['d-time']));   //error
+		$a_time = date("g:i a", strtotime($_POST['a-time']));  //error
 			$flight_add_query = "INSERT INTO `flights_details`( `no`, `name`, `departure`, `d_time`, `arrival`, `a_time`) VALUES ($no,'$name','$departure','$d_time','$arrival','$a_time')";
 
 
@@ -99,6 +106,7 @@ if (!isset($_SESSION['admin_name'])) {
 							if ($seats_add_result) {
 								if (mysqli_affected_rows($con) > 0) {
 									$flight_add_success = "<div class='success-msg add-success-mgs'>Flight Added Successfully</div>";
+
 									$no = '';
 									$name = '';
 									$departure = '';
@@ -140,7 +148,7 @@ if (!isset($_SESSION['admin_name'])) {
 			<div class="container">
 				<div class="header-area">
 
-					<a class="brand-title" href="index.php">AIR BUS HELICOPTER SERVICE</a>
+					<a class="brand-title" href="http://localhost/hal/admin/admin-home.php">AIR BUS HELICOPTER SERVICE</a>
 
 					<div class="header-menu" id="myNavbar">
 
@@ -225,7 +233,7 @@ if (!isset($_SESSION['admin_name'])) {
 							</tr>
 							<tr>
 								<td>
-									<input type="time" name="d-time" placeholder="Enter flight No" class="signup-input signup-input-time" id="d-time" value="<?php echo $d_time; ?>" />
+									<input type="time" name="d-time" class="signup-input signup-input-time" id="d-time" value="<?php echo $d_time; ?>" />
 								</td>
 
 							</tr>

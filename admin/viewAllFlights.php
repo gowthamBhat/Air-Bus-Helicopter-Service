@@ -35,7 +35,7 @@ if (!isset($_SESSION['admin_name'])) {
 
 					<div class="header-menu" id="myNavbar">
 						<span class="aname_header"><?php echo $a_name; ?></span>
-						<a class="admin-option btn-danger" href="admin-logout.php">Logout</a>
+						<a class="admin-option btn-danger" href="http://localhost/hal/admin/admin-home.php">Logout</a>
 					</div>
 					<div style="clear:both;"></div>
 				</div>
