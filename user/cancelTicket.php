@@ -16,7 +16,9 @@ $fetch_rows=mysqli_fetch_array($fetch_result);
 
 $uname=$fetch_rows['uname'];
 $customer=$fetch_rows['customer'];
+
 $no=$fetch_rows['no'];
+
 $name=$fetch_rows['name'];
 $departure=$fetch_rows['departure'];
 $d_time=$fetch_rows['d_time'];
@@ -25,7 +27,9 @@ $a_time=$fetch_rows['a_time'];
 $date=$fetch_rows['date'];
 $adult=$fetch_rows['adult'];
 $child=$fetch_rows['child'];
+
 $seats=$fetch_rows['seats'];
+
 $email=$fetch_rows['email'];
 $dob=$fetch_rows['dob'];
 $gender=$fetch_rows['gender'];
@@ -47,12 +51,28 @@ $delete_query="DELETE FROM `booking` WHERE `booking`.`id`='$id'";*/
 if($cancel_result){
 
 if(mysqli_affected_rows($con)>0){
-		
 
+				//SEATS QUERY
+		$seats_query = "SELECT * FROM flight_seats WHERE no='$no'";
+		$seats_result = mysqli_query($con, $seats_query);
+		$rows_seats = mysqli_fetch_array($seats_result);
+
+		$seatsAvailable = $rows_seats['available'];
+
+			//REMAINING SEATS CALCULATION
+		$remainingSeats =  $seatsAvailable + $seats;
+
+		//UPDATE QUERY
+		$updateSeatsQuery = "UPDATE `flight_seats` SET `available` = '$remainingSeats' WHERE `flight_seats`.`no` = '$no'";
+		$updateSeats_result = mysqli_query($con, $updateSeatsQuery);
+
+
+		//deleting record from booking
 
 		$delete_query="DELETE FROM `booking` WHERE `booking`.`pnr`='$pnr'";
 		$delete_result=mysqli_query($con,$delete_query);
-		if($delete_result){
+
+		if($delete_result &&$seats_result && $updateSeats_result ){
 
 				if(mysqli_affected_rows($con)>0){
 						echo "delete table row";

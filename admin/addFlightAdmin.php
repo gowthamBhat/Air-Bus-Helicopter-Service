@@ -72,7 +72,7 @@ if (!isset($_SESSION['admin_name'])) {
 			$d_time_empty = "<div class='error msg'>Departure Time Empty</div>";
 		} else if (empty($a_time)) {
 
-			                
+
 			$a_time_empty = "<div class='error msg'>Arrival Time Empty</div>";
 		} else if (empty($seats)) {
 
@@ -81,9 +81,9 @@ if (!isset($_SESSION['admin_name'])) {
 		} else if (empty($price)) {
 			$price_empty = "<div class='error msg'>Enter Ticket Price</div>";
 		} else {
-			
-		$d_time = date("g:i a", strtotime($_POST['d-time']));   //error
-		$a_time = date("g:i a", strtotime($_POST['a-time']));  //error
+
+			$d_time = date("g:i a", strtotime($_POST['d-time']));
+			$a_time = date("g:i a", strtotime($_POST['a-time']));
 			$flight_add_query = "INSERT INTO `flights_details`( `no`, `name`, `departure`, `d_time`, `arrival`, `a_time`) VALUES ($no,'$name','$departure','$d_time','$arrival','$a_time')";
 
 
