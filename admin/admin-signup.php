@@ -125,8 +125,8 @@ if (isset($_SESSION['admin_name'])) {
 					} else if ($password != $cpassword) {
 						$password_match = "<div class='error signup-error'> Password Not Matched</div>";
 					} else {
-						$signup_query = "INSERT INTO `admin`(`fname`, `lname`, `aname`, `email`, `mobile`, `dob`, `gender`, `password`) 
-							VALUES ('$firstname','$lastname','$username','$email','$mobile','$dob','$gender','$password')";
+						$signup_query = "INSERT INTO `admin`(`fname`,`mname`, `lname`, `aname`, `email`, `mobile`, `dob`, `gender`, `password`) 
+							VALUES ('$firstname','$middlename','$lastname','$username','$email','$mobile','$dob','$gender','$password')";
 						$res_result = mysqli_query($con, $signup_query);
 
 						if ($res_result) {
