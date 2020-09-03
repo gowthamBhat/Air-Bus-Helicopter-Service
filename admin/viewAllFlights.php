@@ -31,11 +31,11 @@ if (!isset($_SESSION['admin_name'])) {
 			<div class="container">
 				<div class="header-area">
 
-					<a class="brand-title" href="index.php">AIR BUS HELICOPTER SERVICE</a>
+					<a class="brand-title" href="http://localhost/hal/admin/admin-home.php">AIR BUS HELICOPTER SERVICE</a>
 
 					<div class="header-menu" id="myNavbar">
 						<span class="aname_header"><?php echo $a_name; ?></span>
-						<a class="admin-option btn-danger" href="http://localhost/hal/admin/admin-home.php">Logout</a>
+						<a class="admin-option btn-danger" href="http://localhost/hal/admin/admin-logout.php">Logout</a>
 					</div>
 					<div style="clear:both;"></div>
 				</div>
