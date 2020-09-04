@@ -5,8 +5,8 @@ try {
 	echo "connection Error:" . $ex;
 }
 session_start();
-if (isset($_SESSION['admin_name'])) {
-	header("location:admin-home.php");
+if (!isset($_SESSION['admin_name'])) {
+	header("location:admin-login.php");
 } else {
 
 
@@ -172,12 +172,12 @@ if (isset($_SESSION['admin_name'])) {
 			<div class="container">
 				<div class="header-area">
 
-					<a class="brand-title" href="http://localhost/hal/index.php">AIR BUS HELICOPTER SERVICE</a>
+					<a class="brand-title" href="http://localhost/hal/admin/admin-home.php">AIR BUS HELICOPTER SERVICE</a>
 
 					<div class="header-menu" id="myNavbar">
 
-						<a class="user-option" href="admin-login.php">Login</a>
-						<a class="user-option" href="admin-signup.php">Signup</a>
+						<!-- <a class="user-option" href="admin-login.php">Login</a>
+						<a class="user-option" href="admin-signup.php">Signup</a> -->
 					</div>
 					<div style="clear:both;"></div>
 				</div>

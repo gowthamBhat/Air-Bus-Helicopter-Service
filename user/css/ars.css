@@ -1,790 +1,758 @@
-*{
-	margin:0;
-	padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-
-@font-face{
-	font-family:"DidactGothic";
-	src:url("../fonts/DidactGothic.ttf");
+@font-face {
+  font-family: "DidactGothic";
+  src: url("../fonts/DidactGothic.ttf");
 }
 
-body{
-	font-size:100%;
-	line-height: 1.3;
-	font-family: "DidactGothic",sans-serif;
+body {
+  font-size: 100%;
+  line-height: 1.3;
+  font-family: "DidactGothic", sans-serif;
 }
 
-.container{
-	max-width:1200px;
-	width:100%;
-	margin:0 auto;
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /*======= Common Styles==================*/
 .error {
-    margin: 40px auto 0px;
-    text-align: center;
-    color: #fb0202;
-    font-size: 16px;
-    letter-spacing: 1px;
-    font-weight: bold;
+  margin: 40px auto 0px;
+  text-align: center;
+  color: #fb0202;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 
 .success {
-    margin: 40px auto 0px;
-    text-align: center;
-    color: #1eb902;
-    font-size: 16px;
-    letter-spacing: 1px;
-    font-weight: bold;
+  margin: 40px auto 0px;
+  text-align: center;
+  color: #1eb902;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 
 .error-msg {
-    margin: 40px auto 0px;
-    text-align: center;
-    color: #fb0202;
-    font-size: 16px;
-    letter-spacing: 1px;
-    border: 1px solid #fb0202;
-    padding: 15px;
-    width: 71%;
-    border-radius: 5px;
-    background-color: #fb020224;
-    font-weight: bold;
+  margin: 40px auto 0px;
+  text-align: center;
+  color: #fb0202;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border: 1px solid #fb0202;
+  padding: 15px;
+  width: 71%;
+  border-radius: 5px;
+  background-color: #fb020224;
+  font-weight: bold;
 }
 
 .success-msg {
-    margin: 40px auto 0px;
-    text-align: center;
-    color: #1eb902;
-    font-size: 16px;
-    letter-spacing: 1px;
-    border: 1px solid #1eb902;
-    padding: 15px;
-    width: 71%;
-    border-radius: 5px;
-    background-color: #1eb9021f;
-    font-weight: bold;
+  margin: 40px auto 0px;
+  text-align: center;
+  color: #1eb902;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border: 1px solid #1eb902;
+  padding: 15px;
+  width: 71%;
+  border-radius: 5px;
+  background-color: #1eb9021f;
+  font-weight: bold;
 }
-
-
 
 /*==========Header Style==============*/
 
 .header-area-full {
-    background-color: #333;
-    padding: 10px 0px;
+  background-color: #333;
+  padding: 10px 0px;
 }
 
 a.brand-title {
-    float: left;
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-size: 25px;
-    font-weight: bold;
-    color: #fff;
+  float: left;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
 }
 
-
 .index-header-area > a.brand-title {
-    float: none;
-    text-align: center;
-    display: block;
+  float: none;
+  text-align: center;
+  display: block;
 }
 
 .header-menu {
-    float: right;
+  float: right;
 }
 
 a.user-option {
-    text-decoration: none;
-    color: #fff;
-    letter-spacing: 1px;
-    font-size: 15px;
-    margin: 6px 15px;
-    display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin: 6px 15px;
+  display: inline-block;
 }
 
 a.user-option:hover {
-	color: #1eb902;
+  color: #1eb902;
 }
 
-
 span.uname_header {
-    margin: 10px 0px;
-    display: inline-block;
-    color: #05bff7;
-    letter-spacing: 1px;
-    font-size: 14px;
-    /* color: #fff; */
+  margin: 10px 0px;
+  display: inline-block;
+  color: #05bff7;
+  letter-spacing: 1px;
+  font-size: 14px;
+  /* color: #fff; */
 }
 
 span.aname_header {
-    margin: 10px 0px;
-    display: inline-block;
-    color: #05bff7;
-    letter-spacing: 1px;
-    font-size: 14px;
-    /* color: #fff; */
+  margin: 10px 0px;
+  display: inline-block;
+  color: #05bff7;
+  letter-spacing: 1px;
+  font-size: 14px;
+  /* color: #fff; */
 }
-
 
 .btn-danger {
-    color: #fff !important;
-    padding: 9px 15px;
-    background-color: #f93030;
-    margin: 0px 15px !important;
-    text-decoration: none;
-    border-radius: 5px;
+  color: #fff !important;
+  padding: 9px 15px;
+  background-color: #f93030;
+  margin: 0px 15px !important;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
-.btn-danger:hover{
-	 background-color:#ce0202;
+.btn-danger:hover {
+  background-color: #ce0202;
 }
 
 /* ========== Login Page Style ===============*/
 
 .box-one {
-    padding: 20px;
-    background: #ddd;
-    border-radius: 3px;
-    margin: 20px auto;
-    width: 500px;
+  padding: 20px;
+  background: #ddd;
+  border-radius: 3px;
+  margin: 20px auto;
+  width: 500px;
 }
 
 .box-one h2 {
-    text-align: center;
-    letter-spacing: 1px;
+  text-align: center;
+  letter-spacing: 1px;
 }
 
-
 label.login-lable {
-    text-align: center;
-    display: block;
-    margin: 7% auto 0px;
-    letter-spacing: 1px;
-    font-size: 16px;
+  text-align: center;
+  display: block;
+  margin: 7% auto 0px;
+  letter-spacing: 1px;
+  font-size: 16px;
 }
 
 .login-form .login-input {
-    display: block;
-    width: 70%;
-    border: 0;
-    padding: 3%;
-    margin: 2% auto 0px;
-    text-align: center;
+  display: block;
+  width: 70%;
+  border: 0;
+  padding: 3%;
+  margin: 2% auto 0px;
+  text-align: center;
 }
 
 .login-form .login-input:nth-child(5) {
-    background-color: #1eb902;
-    color: #fff;
-    width: 76%;
-    font-size: 16px;
-    letter-spacing: 1px;
-    margin: 7% auto;
+  background-color: #1eb902;
+  color: #fff;
+  width: 76%;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin: 7% auto;
 }
 
 .login-form .login-input:nth-child(5):hover {
-    background-color: #168c01;
- 
+  background-color: #168c01;
 }
 
 /*============Home Style=================*/
 
 .home-area h2 {
-    text-align: center;
-    padding: 30px 0px 0px;
-    letter-spacing: 1px;
+  text-align: center;
+  padding: 30px 0px 0px;
+  letter-spacing: 1px;
 }
 
 .home-options {
-    text-align: center;
+  text-align: center;
 }
 
 .option-area {
-    width: 250px;
-    height: 200px;
-    background: #ddd;
-    display: inline-block;
-    margin: 2%;
-    position: relative;
-    box-shadow: 3px 3px 10px 0px #333333ad;
-    font-size: 20px;
+  width: 250px;
+  height: 200px;
+  background: #ddd;
+  display: inline-block;
+  margin: 2%;
+  position: relative;
+  box-shadow: 3px 3px 10px 0px #333333ad;
+  font-size: 20px;
 }
 
 .option-area:hover {
-    box-shadow: 0px 0px 10px 0px #333333ad;
+  box-shadow: 0px 0px 10px 0px #333333ad;
 }
 
 a.home-link {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    width: 100%;
-    padding: 15px 0px;
-    text-decoration: none;
-    background-color: #1eb902e0;
-    color: black;
-    letter-spacing: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  padding: 15px 0px;
+  text-decoration: none;
+  background-color: #1eb902e0;
+  color: black;
+  letter-spacing: 1px;
 }
 .home-options div.option-area:nth-child(1) {
-    background-image: url("../img/img1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-position: center; */
+  background-image: url("../img/img1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
 }
 .home-options div.option-area:nth-child(2) {
-    background-image: url("../img/img2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: url("../img/img2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .home-options div.option-area:nth-child(3) {
-    background-image: url("../img/img3.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: url("../img/img3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .home-options div.option-area:nth-child(4) {
-    background-image: url("../img/img4.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: url("../img/img4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /*======= Search flight by Place styles============*/
 
 .search-error {
-    margin: 0px auto 0px !important;
+  margin: 0px auto 0px !important;
 }
 
 .search-area {
-	 padding: 20px;
-    background: #1eb902;
-    border-radius: 3px;
-    margin: 20px auto;
+  padding: 20px;
+  background: #1eb902;
+  border-radius: 3px;
+  margin: 20px auto;
 }
 
-
 .search-area h2 {
-    text-align: center;
-    padding: 30px 0px 0px;
-    letter-spacing: 1px;
-    color: #fff;
+  text-align: center;
+  padding: 30px 0px 0px;
+  letter-spacing: 1px;
+  color: #fff;
 }
 
 form.flight-search-by-place-form {
-    text-align: center;
+  text-align: center;
 }
 
-
 input.psearch-input {
-    padding: 10px;
-    margin: 30px 5px;
-    border: 0;
+  padding: 10px;
+  margin: 30px 5px;
+  border: 0;
 }
 
 input.psearch-input:nth-child(3) {
-    padding: 10px 30px;
-    color: #fff;
-    background: #333;
+  padding: 10px 30px;
+  color: #fff;
+  background: #333;
 }
 
 span.flight-count {
-    padding: 5px 10px;
-    background-color: #333;
-    border-radius: 3px;
-    color: #fff;
+  padding: 5px 10px;
+  background-color: #333;
+  border-radius: 3px;
+  color: #fff;
 }
 
 table.flights-view-table {
-    width: 100%;
-    margin: 0px auto;
-    text-align: center;
-    border-spacing: 0;
-    letter-spacing: 1px;
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  border-spacing: 0;
+  letter-spacing: 1px;
 }
 
 table.flights-view-table thead tr th {
-    padding: 20px 0px;
-    background-color: #333;
-    color: #fff;
-    /* letter-spacing: 1px; */
+  padding: 20px 0px;
+  background-color: #333;
+  color: #fff;
+  /* letter-spacing: 1px; */
 }
 
-
 a.book-option-btn {
-    padding: 10px 0px;
-    display: block;
-    margin: 15px auto;
-    text-decoration: none;
-    background-color: #1eb902;
-    width: 110px;
-    color: #fff;
+  padding: 10px 0px;
+  display: block;
+  margin: 15px auto;
+  text-decoration: none;
+  background-color: #1eb902;
+  width: 110px;
+  color: #fff;
+}
+a.book-option-btn2 {
+  padding: 10px 0px;
+  display: block;
+  margin: 15px auto;
+  text-decoration: none;
+  background-color: red;
+  width: 110px;
+  color: #fff;
+  pointer-events: none;
+  cursor: not-allowed;
 }
 
 a.book-option-btn:hover {
-
-    background-color: #1b9405;
-
+  background-color: #1b9405;
 }
 
 table.flights-view-table tbody tr:nth-child(odd) {
-    background-color: #dddddd38;
+  background-color: #dddddd38;
 }
 
 table.flights-view-table tbody tr:nth-child(even) {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 .go-back {
-    text-decoration: none;
-    padding: 10px 15px;
-    display: inline-block;
-    background-color: #0782a7;
-    color: #fff;
-    border-radius: 5px;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  background-color: #0782a7;
+  color: #fff;
+  border-radius: 5px;
 }
 
 .view-area span {
-    margin: 15px;
-    display: inline-block;
+  margin: 15px;
+  display: inline-block;
 }
 
 span.go-back-span {
-    float: left;
+  float: left;
 }
 
 .success.count-div {
-    float: right;
-    margin: 0px;
-    /* width: 357px; */
+  float: right;
+  margin: 0px;
+  /* width: 357px; */
 }
 
-
 a.view-option {
-    padding: 10px 0px;
-    display: block;
-    margin: 15px auto;
-    text-decoration: none;
-    background-color: #0782a7;
-    width: 110px;
-    color: #fff;
+  padding: 10px 0px;
+  display: block;
+  margin: 15px auto;
+  text-decoration: none;
+  background-color: #0782a7;
+  width: 110px;
+  color: #fff;
 }
 
 a.cancel-option {
-	padding: 10px 0px;
-    display: block;
-    margin: 15px auto;
-    text-decoration: none;
-    background-color: #f93030;
-    width: 110px;
-    color: #fff;
+  padding: 10px 0px;
+  display: block;
+  margin: 15px auto;
+  text-decoration: none;
+  background-color: #f93030;
+  width: 110px;
+  color: #fff;
 }
 
 /*=======view ticket style======*/
 
 table.ticket-view-table {
-    width: 60%;
-    margin: 0 auto;
-    background-color: #ddd;
-    padding: 20px;
+  width: 60%;
+  margin: 0 auto;
+  background-color: #ddd;
+  padding: 20px;
 }
 
 table.ticket-view-table tbody tr td {
-    
 }
-
 
 table.ticket-view-table tbody tr td:nth-child(1) {
-    float: left;
-    text-align: right;
-        padding: 10px 10px 10px 0px;
-         width: 30%;
+  float: left;
+  text-align: right;
+  padding: 10px 10px 10px 0px;
+  width: 30%;
 }
 
-
 table.ticket-view-table tbody tr td:nth-child(2) {
-    float: right;
-    text-align: left;
-    padding: 10px 0px 10px 10px;
-    background-color: #fff;
-     width: 60%;
+  float: right;
+  text-align: left;
+  padding: 10px 0px 10px 10px;
+  background-color: #fff;
+  width: 60%;
 }
 
 .viewTicket {
-    text-align: center;
-    letter-spacing: 1px;
+  text-align: center;
+  letter-spacing: 1px;
 }
 
 td.c-name-title {
-    width: 100% !important;
+  width: 100% !important;
 }
 
-.viewTicket-go{
-	float:none !important;
+.viewTicket-go {
+  float: none !important;
 }
-
 
 form.reservation-form {
-    text-align: center;
+  text-align: center;
 }
-
 
 table.user-reserv-table {
-    width: 280px;
-    display: inline-block;
-    padding: 20px 15px;
-    /* border: 1px solid #333; */
-    background: #33333354;
-    margin: 0px 10px;
+  width: 280px;
+  display: inline-block;
+  padding: 20px 15px;
+  /* border: 1px solid #333; */
+  background: #33333354;
+  margin: 0px 10px;
 }
 
-
 .reservation-area {
-    width: 950px;
-    margin: 12px auto;
-    padding: 20px 30px;
-    background: #06bfd2;
-    border-radius: 3px;
-    color: #fff;
+  width: 950px;
+  margin: 12px auto;
+  padding: 20px 30px;
+  background: #06bfd2;
+  border-radius: 3px;
+  color: #fff;
 }
 
 h2.formarea-title {
-    margin: 0px 0px 15px;
-    text-align: center;
-    font-size: 2em;
-    letter-spacing: 1px;
-    line-height: 1.3;
+  margin: 0px 0px 15px;
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 1px;
+  line-height: 1.3;
 }
 
 label.reservation-label {
-    text-align: center;
-    display: block;
-    padding: 5px 0px;
-    font-size: 14px;
-    /* font-weight: bold; */
-    letter-spacing: 1px;
+  text-align: center;
+  display: block;
+  padding: 5px 0px;
+  font-size: 14px;
+  /* font-weight: bold; */
+  letter-spacing: 1px;
 }
-
 
 .reservation-input {
-    width: 250px;
-    border: 0;
-    margin: 8px auto;
-    display: block;
-    padding: 8px 0px;
-    /* border-radius: 5px; */
-    text-align: center;
+  width: 250px;
+  border: 0;
+  margin: 8px auto;
+  display: block;
+  padding: 8px 0px;
+  /* border-radius: 5px; */
+  text-align: center;
 }
 
-
 .reservation-submit {
-    padding: 15px;
-    border: none;
-    width: 200px;
-    margin: 25px 10px 0px 10px;
-    color: #fff;
-    letter-spacing: 1px;
-    font-size: 16px;
-    background: #333;
-    cursor: pointer;
-    
+  padding: 15px;
+  border: none;
+  width: 200px;
+  margin: 25px 10px 0px 10px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 16px;
+  background: #333;
+  cursor: pointer;
 }
 
 .res-error {
-    margin: 0 auto 20px;
+  margin: 0 auto 20px;
 }
 
-
 p.r-details {
-    text-align: center;
-    padding: 10px;
-        font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
 }
 
 span.r-details-span {
-    color: #333;
-    font-weight: bold;
+  color: #333;
+  font-weight: bold;
 }
 
-
 button.reservation-btn {
-    padding: 10px 15px;
-    width: 200px;
-    margin: 20px auto 10px;
-    display: block;
-    border: 0;
-    color: #fff;
-    background-color: #333;
-    letter-spacing: 1px;
+  padding: 10px 15px;
+  width: 200px;
+  margin: 20px auto 10px;
+  display: block;
+  border: 0;
+  color: #fff;
+  background-color: #333;
+  letter-spacing: 1px;
 }
 
 .reservation-area-2 {
-    width: 600px;
-    margin: 12px auto;
-    padding: 50px 30px;
-    background: #06bfd2;
-    border-radius: 3px;
-    color: #fff;
+  width: 600px;
+  margin: 12px auto;
+  padding: 50px 30px;
+  background: #06bfd2;
+  border-radius: 3px;
+  color: #fff;
 }
 
-
 a.uview-option {
-    padding: 15px;
-    text-decoration: none;
-    letter-spacing: 1px;
-    font-size: 16px;
-    margin: 30px auto;
-    width: 200px;
-    display: block;
-    background: #0296b7;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
+  padding: 15px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 16px;
+  margin: 30px auto;
+  width: 200px;
+  display: block;
+  background: #0296b7;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
 }
 
 input.fadd-input {
-    width: 60%;
-    margin: 0 auto;
-    padding: 10px;
-    display: block;
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+  display: block;
 }
-
-
 
 /*===========signup style=================*/
 
 .signup-error {
-    margin: 0 auto 20px;
+  margin: 0 auto 20px;
 }
 
 .signup-success {
-    margin: 0 auto 20px;
-     background-color: #ffffff !important;
+  margin: 0 auto 20px;
+  background-color: #ffffff !important;
 }
 
-
-
 .signup-area {
-    width: 650px;
-    margin: 12px auto;
-    padding: 20px 30px;
-    background: #06bfd2;
-    border-radius: 3px;
-    color: #fff;
+  width: 650px;
+  margin: 12px auto;
+  padding: 20px 30px;
+  background: #06bfd2;
+  border-radius: 3px;
+  color: #fff;
 }
 
 form#signup-form {
-    text-align: center;
+  text-align: center;
 }
 
 table.signup-table {
-    width: 280px;
-    display: inline-block;
-    padding: 0px 15px;
-    /* border: 1px solid #333; */
-    background: #33333354;
-    margin: 0px 10px;
+  width: 280px;
+  display: inline-block;
+  padding: 0px 15px;
+  /* border: 1px solid #333; */
+  background: #33333354;
+  margin: 0px 10px;
 }
 
-.mgsg{
-    margin: 0px auto 10px !important;
+.mgsg {
+  margin: 0px auto 10px !important;
 }
-
 
 .signup-submit {
-    padding: 15px;
-    border: none;
-    width: 200px;
-    margin: 25px 10px 0px 10px;
-    color: #fff;
-    letter-spacing: 1px;
-    font-size: 16px;
-    background: #333;
+  padding: 15px;
+  border: none;
+  width: 200px;
+  margin: 25px 10px 0px 10px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 16px;
+  background: #333;
 }
-
 
 label.signup-label {
-    text-align: center;
-    display: block;
-    padding: 5px 0px;
-    font-size: 14px;
-    /* font-weight: bold; */
-    letter-spacing: 1px;
+  text-align: center;
+  display: block;
+  padding: 5px 0px;
+  font-size: 14px;
+  /* font-weight: bold; */
+  letter-spacing: 1px;
 }
 
-
 .signup-input {
-    width: 250px;
-    border: 0;
-    margin: 8px auto;
-    display: block;
-    padding: 8px 0px;
-    /* border-radius: 5px; */
-    text-align: center;
+  width: 250px;
+  border: 0;
+  margin: 8px auto;
+  display: block;
+  padding: 8px 0px;
+  /* border-radius: 5px; */
+  text-align: center;
 }
 
 .signup-input-date {
-    padding: 5px 0px !important;
+  padding: 5px 0px !important;
 }
-
-
 
 /*=========== index page style==================*/
 
 .index-area {
-    margin: 0px auto;
-    padding: 0px 0px 30px;
+  margin: 0px auto;
+  padding: 0px 0px 30px;
 }
 
 .index-area > h2.formarea-title {
-    font-size: 2.5em;
-    color: #1eb902;
-    margin-bottom:0px !important;
+  font-size: 2.5em;
+  color: #1eb902;
+  margin-bottom: 0px !important;
 }
 
-.index-area >  .home-options div.option-area:nth-child(1) {
-    background-image: url(../img/user-img.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-     background-position: center; 
+.index-area > .home-options div.option-area:nth-child(1) {
+  background-image: url(../img/user-img.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
-.index-area >  .home-options div.option-area:nth-child(2) {
-    background-image: url(../img/admin-img.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center; 
+.index-area > .home-options div.option-area:nth-child(2) {
+  background-image: url(../img/admin-img.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
-
-
 
 /*========== slider style=================*/
 
 .slide:nth-of-type(1) {
-    background-image: url(../img/slider1/slider1.jpg);
+  background-image: url(../img/slider1/slider1.jpg);
 }
 
 .slide:nth-of-type(2) {
-    background-image: url(../img/slider1/sll.jpg);
+  background-image: url(../img/slider1/sll.jpg);
 }
 
 .slide:nth-of-type(3) {
-    background-image: url(../img/slider1/slide3.jpg);
+  background-image: url(../img/slider1/slide3.jpg);
 }
 
 .slide:nth-of-type(4) {
-    background-image: url(../img/slider1/slide4.jpg);
+  background-image: url(../img/slider1/slide4.jpg);
 }
 .slide:nth-of-type(5) {
-    background-image: url(../img/slider1/slll.jpg);
+  background-image: url(../img/slider1/slll.jpg);
 }
 
 .slider-area-full {
-    padding: 30px 0px;
+  padding: 30px 0px;
 }
 
 #slides {
-    position: relative;
-    height: 600px;
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    list-style-type: none;
-    border-radius: 5px;
-    overflow: hidden;
+  position: relative;
+  height: 600px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .slide {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    z-index: 1;
-    font-size: 40px;
-    padding: 40px;
-    box-sizing: border-box;
-    background: #333;
-    color: #fff;
-    background-size: cover;
-    background-repeat: no-repeat;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  font-size: 40px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #333;
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-
 
 .showing {
-    opacity: 1;
+  opacity: 1;
 }
-
 
 /*------------------footer style---------------*/
 
 .footer-area-full {
-    background-color: #333;
+  background-color: #333;
 }
 
 form.flight-add-form {
-    text-align: center;
+  text-align: center;
 }
 
 .footer-area p {
-    text-align: center;
-    padding: 15px 0px;
-    letter-spacing: 1px;
-    color: #fff;
+  text-align: center;
+  padding: 15px 0px;
+  letter-spacing: 1px;
+  color: #fff;
 }
 
-
 table.signup-table.signup-table-three {
-    margin: 0px 10px !important;
-    /* display: block !important; */
-    padding: 5px 0 !important;
-    width: 91% !important;
+  margin: 0px 10px !important;
+  /* display: block !important; */
+  padding: 5px 0 !important;
+  width: 91% !important;
 }
 
 table.signup-table.signup-table-three tbody tr td label.signup-label {
-    width: 200px;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
+  width: 200px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
 }
 
-
-table.signup-table.signup-table-three tbody,table.signup-table.signup-table-three tbody tr,table.signup-table.signup-table-three tbody tr td {
-    width: 100%;
-    display: block;
-
+table.signup-table.signup-table-three tbody,
+table.signup-table.signup-table-three tbody tr,
+table.signup-table.signup-table-three tbody tr td {
+  width: 100%;
+  display: block;
 }
 
-
-table.signup-table.signup-table-three tbody tr td > .signup-input{
-
+table.signup-table.signup-table-three tbody tr td > .signup-input {
 }
 
-.signup-area > .error{
-	margin:0px auto 10px;
+.signup-area > .error {
+  margin: 0px auto 10px;
 }
 
 .add-success-mgs {
-    background-color: #fff !important;
-    margin: 0px auto 10px;
+  background-color: #fff !important;
+  margin: 0px auto 10px;
 }
 
 .signup-input-time {
-    padding: 5px 0px;
+  padding: 5px 0px;
 }
 
 .signup-link {
-    text-decoration: none;
-    padding: 13px 0px 14px;
-    display: inline-block;
+  text-decoration: none;
+  padding: 13px 0px 14px;
+  display: inline-block;
 }
 
 table.flights-view-table.all-view tbody tr td {
-    padding: 20px 0px;
+  padding: 20px 0px;
 }

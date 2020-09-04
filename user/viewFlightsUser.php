@@ -31,6 +31,17 @@ if (!isset($_SESSION['username'])) {
 		<meta charset="utf-8" />
 		<link rel="shortcut icon" type="image/x-icon" href="img/fav-icon.png" />
 		<link rel="stylesheet" type="text/css" href="css/ars.css" />
+		<style>
+			.book-option-btn2 {
+				padding: 10px 0px;
+				display: block;
+				margin: 15px auto;
+				text-decoration: none;
+				background-color: red;
+				width: 110px;
+				color: #fff;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -69,6 +80,8 @@ if (!isset($_SESSION['username'])) {
 
 						$res = mysqli_query($con, $search_query);
 
+
+
 						if ($res) {
 							if (mysqli_num_rows($res) > 0) {
 								echo "<div class='success count-div'>Available Flights - <span class='flight-count'>" . mysqli_num_rows($res) . "</span></div>";
@@ -91,6 +104,7 @@ if (!isset($_SESSION['username'])) {
 
 								while ($row = mysqli_fetch_array($res)) {
 									echo "<tr>";
+									$no = $row['no'];
 									echo "<td>" . $row['no'] . "</td>";
 									echo "<td>" . $row['name'] . "</td>";
 
@@ -99,11 +113,23 @@ if (!isset($_SESSION['username'])) {
 									echo "<td>" . $row['arrival'] . "</td>";
 									echo "<td>" . $row['a_time'] . "</td>";
 
+									$seats_query = "SELECT available FROM flight_seats WHERE no='$no'";
+									$seats_result = mysqli_query($con, $seats_query);
 
-									echo "<td>
+									while ($row2 = mysqli_fetch_array($seats_result)) {
+
+										if ($row2['available'] > 0) {
+											echo "<td>
 								    <a class='book-option-btn' href='user-reservation.php?id=" . $row['id'] . "'>Reserve</a>
 								    </td>";
-									echo "</tr>";
+											echo "</tr>";
+										} else {
+											echo "<td>
+								    <a class='book-option-btn2' href=''>TicketBooked</a>
+								    </td>";
+											echo "</tr>";
+										}
+									}
 								}
 							} else {
 								$search_empty = "<div class='error-msg'>Flights not available </div>";
@@ -124,7 +150,6 @@ if (!isset($_SESSION['username'])) {
 				</div>
 			</div>
 		</div>
-
 
 
 

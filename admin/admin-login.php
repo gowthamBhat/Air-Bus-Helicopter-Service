@@ -64,8 +64,8 @@ if (isset($_SESSION['admin_name'])) {
 
 					<div class="header-menu" id="myNavbar">
 
-						<a class="user-option" href="admin-login.php">Login</a>
-						<a class="user-option" href="admin-signup.php">Signup</a>
+						<!-- <a class="user-option" href="admin-login.php">Login</a>
+						<a class="user-option" href="admin-signup.php">Signup</a> -->
 					</div>
 					<div style="clear:both;"></div>
 				</div>

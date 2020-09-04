@@ -176,6 +176,7 @@ if (!isset($_SESSION['admin_name'])) {
 					echo $a_time_empty;
 					echo $seats_empty;
 					echo $price_empty;
+					echo $flight_add_success;
 
 
 					echo $seats_query_failed;

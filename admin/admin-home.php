@@ -29,6 +29,8 @@ if (!isset($_SESSION['admin_name'])) {
 
 					<div class="header-menu" id="myNavbar">
 						<span class="uname_header"><?php echo $a_name; ?></span>
+
+						<a class="user-option btn-success" href="http://localhost/hal/admin/admin-signup.php">Add Admin</a>
 						<a class="user-option btn-danger" href="admin-logout.php">Logout</a>
 					</div>
 					<div style="clear:both;"></div>
@@ -54,6 +56,9 @@ if (!isset($_SESSION['admin_name'])) {
 						</div>
 						<div class="option-area">
 							<a class='home-link' href="viewAllCancelledTicket.php">View All Cancelled Tickets</a>
+						</div>
+						<div class="option-area">
+							<a class='home-link' href="viewAllUsers.php">View All Users</a>
 						</div>
 
 
