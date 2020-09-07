@@ -322,7 +322,7 @@ a.book-option-btn2 {
   width: 110px;
   color: #fff;
   pointer-events: none;
-  cursor: not-allowed;
+  cursor: no-drop;
 }
 
 a.book-option-btn:hover {

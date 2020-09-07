@@ -32,14 +32,16 @@ if (!isset($_SESSION['username'])) {
 		<link rel="shortcut icon" type="image/x-icon" href="img/fav-icon.png" />
 		<link rel="stylesheet" type="text/css" href="css/ars.css" />
 		<style>
-			.book-option-btn2 {
+			.tSoldOut {
 				padding: 10px 0px;
+				cursor: no-drop;
 				display: block;
 				margin: 15px auto;
 				text-decoration: none;
 				background-color: red;
 				width: 110px;
 				color: #fff;
+
 			}
 		</style>
 	</head>
@@ -125,7 +127,7 @@ if (!isset($_SESSION['username'])) {
 											echo "</tr>";
 										} else {
 											echo "<td>
-								    <a class='book-option-btn2' href=''>TicketBooked</a>
+								    <a class='tSoldOut' href='' style='cursor:no-drop'>TicketSoldOut</a>
 								    </td>";
 											echo "</tr>";
 										}
