@@ -25,7 +25,7 @@ if (!isset($_SESSION['admin_name'])) {
 			<div class="container">
 				<div class="header-area">
 
-					<a class="brand-title" href="http://localhost/hal/index.php">AIR BUS HELICOPTER SERVICE</a>
+					<a class="brand-title" href="http://localhost/hal/index.php">AIRBUS HELICOPTER SERVICE</a>
 
 					<div class="header-menu" id="myNavbar">
 						<span class="uname_header"><?php echo $a_name; ?></span>

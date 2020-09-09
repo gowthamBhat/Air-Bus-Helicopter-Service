@@ -172,7 +172,7 @@ if (!isset($_SESSION['admin_name'])) {
 			<div class="container">
 				<div class="header-area">
 
-					<a class="brand-title" href="http://localhost/hal/admin/admin-home.php">AIR BUS HELICOPTER SERVICE</a>
+					<a class="brand-title" href="http://localhost/hal/admin/admin-home.php">AIRBUS HELICOPTER SERVICE</a>
 
 					<div class="header-menu" id="myNavbar">
 
@@ -334,7 +334,7 @@ if (!isset($_SESSION['admin_name'])) {
 				<div class="footer-area">
 
 
-					<p>AIR BUS HELICOPTER SERVICE</p>
+					<p>AIRBUS HELICOPTER SERVICE</p>
 
 				</div>
 			</div>

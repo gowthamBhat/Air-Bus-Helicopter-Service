@@ -14,7 +14,7 @@
 		<div class="container">
 			<div class="header-area">
 
-				<a class="brand-title" href="index.php">AIR BUS HELICOPTER SERVICE</a>
+				<a class="brand-title" href="index.php">AIRBUS HELICOPTER SERVICE</a>
 
 				<div class="header-menu" id="myNavbar">
 
@@ -56,7 +56,7 @@
 			<div class="index-area">
 
 
-				<h2 class="formarea-title">Welcome To AIR BUS HELICOPTER SERVICE</h2>
+				<h2 class="formarea-title">Welcome To AIRBUS HELICOPTER SERVICE</h2>
 				<div class="home-options">
 					<div class="option-area">
 						<a class='home-link' href="user/user-login.php">User Login</a>
@@ -79,7 +79,7 @@
 			<div class="footer-area">
 
 
-				<p>AIR BUS HELICOPTER SERVICE</p>
+				<p>AIRBUS HELICOPTER SERVICE</p>
 
 			</div>
 		</div>

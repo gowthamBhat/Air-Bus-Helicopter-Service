@@ -50,7 +50,7 @@ if (!isset($_SESSION['username'])) {
 			<div class="container">
 				<div class="header-area">
 
-					<a class="brand-title" href="index.php">AIR BUS HELICOPTER SERVICE</a>
+					<a class="brand-title" href="index.php">AIRBUS HELICOPTER SERVICE</a>
 
 					<div class="header-menu" id="myNavbar">
 						<span class="uname_header"><?php echo $u_name; ?></span>
