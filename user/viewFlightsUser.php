@@ -34,7 +34,8 @@ if (!isset($_SESSION['username'])) {
 		<style>
 			.tSoldOut {
 				padding: 10px 0px;
-				cursor: no-drop;
+				 pointer-events: none;
+				 cursor: default;
 				display: block;
 				margin: 15px auto;
 				text-decoration: none;
@@ -127,7 +128,7 @@ if (!isset($_SESSION['username'])) {
 											echo "</tr>";
 										} else {
 											echo "<td>
-								    <a class='tSoldOut' href='' style='cursor:no-drop'>TicketSoldOut</a>
+								    <a class='tSoldOut' href=''>TicketSoldOut</a>
 								    </td>";
 											echo "</tr>";
 										}
