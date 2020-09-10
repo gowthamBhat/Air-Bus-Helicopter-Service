@@ -92,7 +92,7 @@ if (isset($_SESSION['admin_name'])) {
 				</div>
 			</div>
 		</div>
-
+					<center> <a class="go-back" href="http://localhost/hal/index.php" >Go Back</a> </center>
 	</body>
 
 	</html>
