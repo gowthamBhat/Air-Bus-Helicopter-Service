@@ -6,6 +6,9 @@
 	<meta charset="utf-8" />
 	<link rel="shortcut icon" type="image/x-icon" href="fav-icon.png" />
 	<link rel="stylesheet" type="text/css" href="user/css/ars.css" />
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js" 
+	integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
@@ -14,7 +17,7 @@
 		<div class="container">
 			<div class="header-area">
 
-				<a class="brand-title" href="index.php">AIR BUS HELICOPTER SERVICE</a>
+				<a class="brand-title" href="index.php">AIRBUS HELICOPTER SERVICE</a>
 
 				<div class="header-menu" id="myNavbar">
 
@@ -56,12 +59,12 @@
 			<div class="index-area">
 
 
-				<h2 class="formarea-title">Welcome To AIR BUS HELICOPTER SERVICE</h2>
+				<h2 class="formarea-title">Welcome To AIRBUS HELICOPTER SERVICE</h2>
 				<div class="home-options">
-					<div class="option-area">
+					<div class="option-area" id="user-path">
 						<a class='home-link' href="user/user-login.php">User Login</a>
 					</div>
-					<div class="option-area">
+					<div class="option-area"  id="admin-path">
 						<a class='home-link' href="admin/admin-login.php">Admin Login</a>
 					</div>
 					<!--	<div class="option-area">
@@ -79,11 +82,22 @@
 			<div class="footer-area">
 
 
-				<p>AIR BUS HELICOPTER SERVICE</p>
+				<p>AIRBUS HELICOPTER SERVICE</p>
 
 			</div>
 		</div>
 	</div>
+	<script>
+	$(document).ready(function(){
+		$('#user-path').on('click',function(){
+						location.assign("user/user-login.php");
+         });
+		 $('#admin-path').on('click',function(){
+						location.assign("admin/admin-login.php");
+         });
+});
+
+	</script>
 
 </body>
 

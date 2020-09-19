@@ -34,7 +34,8 @@ if (!isset($_SESSION['username'])) {
 		<style>
 			.tSoldOut {
 				padding: 10px 0px;
-				cursor: no-drop;
+				 pointer-events: none;
+				 cursor: default;
 				display: block;
 				margin: 15px auto;
 				text-decoration: none;
@@ -52,7 +53,7 @@ if (!isset($_SESSION['username'])) {
 			<div class="container">
 				<div class="header-area">
 
-					<a class="brand-title" href="http://localhost/hal/index.php">AIR BUS HELICOPTER SERVICE</a>
+					<a class="brand-title" href="http://localhost/hal/user/user-home.php">AIRBUS HELICOPTER SERVICE</a>
 
 					<div class="header-menu" id="myNavbar">
 						<span class="uname_header"><?php echo $u_name; ?></span>
@@ -127,7 +128,7 @@ if (!isset($_SESSION['username'])) {
 											echo "</tr>";
 										} else {
 											echo "<td>
-								    <a class='tSoldOut' href='' style='cursor:no-drop'>TicketSoldOut</a>
+								    <a class='tSoldOut' href=''>TicketSoldOut</a>
 								    </td>";
 											echo "</tr>";
 										}

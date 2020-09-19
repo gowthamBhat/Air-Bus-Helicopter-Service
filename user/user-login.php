@@ -63,7 +63,7 @@ if (isset($_SESSION['username'])) {
 			<div class="container">
 				<div class="header-area">
 
-					<a class="brand-title" href="http://localhost/hal/index.php">AIR BUS HELICOPTER SERVICE</a>
+					<a class="brand-title" href="../index.php">AIRBUS HELICOPTER SERVICE</a>
 
 					<div class="header-menu" id="myNavbar">
 
@@ -98,7 +98,7 @@ if (isset($_SESSION['username'])) {
 			</div>
 		</div>
 
-
+		<center> <a class="go-back" href="http://localhost/hal/index.php" >Go Back</a> </center>
 	</body>
 
 	</html>
